@@ -1,0 +1,72 @@
+@use "../colors/colors";
+@use "../typography/typography";
+
+body {
+  background-color: colors.$color_primary;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  font-family: typography.$font-main;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  align-items: center;
+  background-color: colors.$color_secondary;
+  padding: 25px;
+
+  &__image {
+    border-radius: 10px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__data {
+    display: flex;
+  }
+}
+
+.data {
+  &__nft {
+    display: block;
+  }
+  &__time {
+    display: block;
+  }
+}
+
+.main-texts {
+  display: flex;
+  flex-direction: column;
+  max-width: 302px;
+
+  &__title {
+    color: colors.$color_font_secondary;
+  }
+
+  &__text {
+    color: colors.$color_font_primary;
+  }
+}
+
+.author {
+  a {
+    color: colors.$color_font_secondary;
+  }
+  &__avatar {
+    width: 35px;
+    height: 35px;
+  }
+  &__text {
+    color: colors.$color_font_primary;
+  }
+}
