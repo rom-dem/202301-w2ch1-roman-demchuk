@@ -7,24 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="NFT" content="NFT article card">
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="sass/styles.scss">
   <title>NFT</title>
 </head>
 
 <body>
-  <article class="card">
-    <img class="card__image" src="/src/images/image-equilibrium.jpg"
-      alt="Cristal cube placed on it's vertex over blue background" height="302" width="302">
-    <h2 class="card__title">Equilibrium #3429</h2>
-    <span class="card__text">Our Equilibrium collection promotes balance and calm.</span>
-    <div class="card__data data">
-      <span class="data__nft">0.041 ETH</span>
-      <span class="data__time">3 days left</span>
-    </div>
-    <div class="card__author author">
-      <img class="author__avatar" src="/src/images/image-avatar.png" alt="Male face" width="132" height="132">
-      <span class="author__text">Creation of <a href="jules-wyvern">Jules Wyvern</a></span>
-    </div>
-  </article>
+  <section>
+    <article class="card">
+      <img class="card__image" src="/src/images/image-equilibrium.jpg"
+        alt="Cristal cube placed on it's vertex over blue background" height="302" width="302">
+      <div class="card__main-texts main-texts">
+        <h2 class="main-texts__title">Equilibrium #3429</h2>
+        <span class="main-texts__text">Our Equilibrium collection promotes balance and calm.</span>
+      </div>
+      <div class="card__data data">
+        <span class="data__nft">0.041 ETH</span>
+        <span class="data__time">3 days left</span>
+      </div>
+      <div class="card__author author">
+        <img class="author__avatar" src="/src/images/image-avatar.png" alt="Male face" width="132" height="132">
+        <span class="author__text">Creation of <a href="jules-wyvern">Jules Wyvern</a></span>
+      </div>
+    </article>
+  </section>
 </body>
 
 </html>
